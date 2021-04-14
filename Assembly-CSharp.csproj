@@ -47,6 +47,8 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\SaveLoad.cs" />
+     <Compile Include="Assets\Scripts\KuukausiArvot.cs" />
      <Compile Include="Assets\Scripts\ReadInput.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
