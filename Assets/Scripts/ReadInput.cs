@@ -12,6 +12,7 @@ public class ReadInput : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        
         MuistutusText = (MyText);
         ourComponent = MuistutusText.GetComponent<Text>();
     }
