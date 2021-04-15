@@ -20,6 +20,7 @@ public class ReadInput : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        
         ourComponent.text = input;
     }
 
