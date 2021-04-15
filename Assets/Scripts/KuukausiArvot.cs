@@ -13,26 +13,40 @@ public class KuukausiArvot : MonoBehaviour
     {
         public int DayNum;
         public GameObject Obj;
+        public Color dayColor;
 
-        public Day (int DayNum, GameObject Obj)
+        public Day (int DayNum, Color dayColor, GameObject Obj)
         {
             this.DayNum = DayNum;
             this.Obj = Obj;
+            UpdateColor(dayColor);
             UpdateDay(DayNum);
+        }
+
+        public void UpdateColor(Color newColor)
+        {
+            Obj.GetComponent<Image>().color = newColor;
+            dayColor = newColor;
         }
 
         public void UpdateDay(int newDayNum)
         {
             this.DayNum = newDayNum;
-
-            Obj.GetComponentInChildren<Text>().text = (DayNum + 1).ToString();
+            if (dayColor == Color.white)
+            {
+                Obj.GetComponentInChildren<Text>().text = (DayNum + 1).ToString();
+            }
+            else
+            {
+                Obj.GetComponentInChildren<Text>().text = "";
+            }
         }
         
     }
 
-    private List<int> Days = new List<int>();
+    private List<Day> Days = new List<Day>();
 
-    public int[] weeks = new int[5];
+    public Transform[] weeks;
 
     public DateTime currentDate = DateTime.Now;
 
@@ -45,33 +59,64 @@ public class KuukausiArvot : MonoBehaviour
     {
         DateTime date = new DateTime(year, month, 1);
 
+        Day day = new Day();
+
         currentDate = date;
         int startDay = GetMonthStartDay(year, month);
         int endDay = GetTotalNumberOfDays(year, month);
 
         if(Days.Count == 0)
         {
-            for (int i = 0; 0 < 6; i++)
+            for (int i = 0; i < 6; i++)
             {
-                for (int a = 0, 0 < 7; a++)
+                for (int a = 0; a < 7; a++)
                 {
                     Day newDay;
 
-                    int currDay = (i * 7) + i;
+                    int currDay = (i * 7) + a;
 
                     if (currDay < startDay || currDay - startDay >= endDay)
                     {
-                        newDay = new Day(currDay - startDay, weeks[a].GetChild(i));
+                        newDay = new Day(currDay - startDay, Color.grey,weeks[i].GetChild(a).gameObject);
                     }
                     else
                     {
-                        newDay = new Day(currDay - startDay, weeks[a].GetChild(i));
+                        newDay = new Day(currDay - startDay, Color.white,weeks[i].GetChild(a).gameObject);
                     }
 
                     Days.Add(newDay);
                 }
             }
         }
+
+        else
+        {
+            for(int i = 0; i = 42; i++)
+            {
+                if (i < startDay || i - startDay >= endDay)
+                {
+                    Days[i].UpdateColor(Color.grey);
+                }
+                else
+                {
+                    Days[i].UpdateColor(Color.white);
+                }
+                Days[i].UpdateDay(i - startDay);
+            }
+        }
+    }
+
+    int GetMonthStartDay(int year, int month)
+    {
+        DateTime temp = new DateTime(year, month, 1);
+
+        //DayOfWeek Thursday == 0;
+        return (int)temp.DayOfWeek;
+    }
+
+    int GetTotalNumberOfDays(int year, int month)
+    {
+        return DateTime.DaysInMonth(year, month);
     }*/
 
     public void Tammikuu()
