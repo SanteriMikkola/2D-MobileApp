@@ -47,8 +47,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\TransferInput.cs" />
      <Compile Include="Assets\Scripts\SaveLoad.cs" />
      <Compile Include="Assets\Scripts\KuukausiArvot.cs" />
+     <Compile Include="Assets\Scripts\SecretBoi.cs" />
      <Compile Include="Assets\Scripts\ReadInput.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -631,7 +633,6 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2020.3.3f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
-<<<<<<< HEAD
  <HintPath>C:/Users/s0pani01/Desktop/2D-MobileApp/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
@@ -657,33 +658,6 @@
  </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Users/s0pani01/Desktop/2D-MobileApp/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-=======
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
- </Reference>
- <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
- </Reference>
- <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
- </Reference>
- <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/s0mija01/Documents/UnityProjects/2D-MobileApp/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
->>>>>>> d3c08c8e685b97963a643419171eca43e54676e1
  </Reference>
   </ItemGroup>
   <ItemGroup>
