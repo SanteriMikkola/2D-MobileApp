@@ -9,7 +9,7 @@ public class KuukausiArvot : MonoBehaviour
     private int kuukausi;
     private string kuukaudenNimi;
 
-    /*public class Day
+    public class Day
     {
         public int DayNum;
         public GameObject Obj;
@@ -44,7 +44,7 @@ public class KuukausiArvot : MonoBehaviour
         
     }
 
-    private List<Day> Days = new List<Day>();
+    private readonly List<Day> Days = new List<Day>();
 
     public Transform[] weeks;
 
@@ -59,7 +59,6 @@ public class KuukausiArvot : MonoBehaviour
     {
         DateTime date = new DateTime(year, month, 1);
 
-        Day day = new Day();
 
         currentDate = date;
         int startDay = GetMonthStartDay(year, month);
@@ -77,11 +76,11 @@ public class KuukausiArvot : MonoBehaviour
 
                     if (currDay < startDay || currDay - startDay >= endDay)
                     {
-                        newDay = new Day(currDay - startDay, Color.grey,weeks[i].GetChild(a).gameObject);
+                        newDay = new Day(currDay - startDay, Color.grey, weeks[i].GetChild(a).gameObject);
                     }
                     else
                     {
-                        newDay = new Day(currDay - startDay, Color.white,weeks[i].GetChild(a).gameObject);
+                        newDay = new Day(currDay - startDay, Color.white, weeks[i].GetChild(a).gameObject);
                     }
 
                     Days.Add(newDay);
@@ -91,18 +90,23 @@ public class KuukausiArvot : MonoBehaviour
 
         else
         {
-            for(int i = 0; i = 42; i++)
+            for (int b = 0; b < 42; b++)
             {
-                if (i < startDay || i - startDay >= endDay)
+                if (b < startDay || b - startDay >= endDay)
                 {
-                    Days[i].UpdateColor(Color.grey);
+                    Days[b].UpdateColor(Color.grey);
                 }
                 else
                 {
-                    Days[i].UpdateColor(Color.white);
+                    Days[b].UpdateColor(Color.white);
                 }
-                Days[i].UpdateDay(i - startDay);
+                Days[b].UpdateDay(b - startDay);
             }
+        }
+
+        if (DateTime.Now.Year == year && DateTime.Now.Month == month)
+        {
+            Days[(DateTime.Now.Day - 1) + startDay].UpdateColor(Color.green);
         }
     }
 
@@ -110,20 +114,80 @@ public class KuukausiArvot : MonoBehaviour
     {
         DateTime temp = new DateTime(year, month, 1);
 
-        //DayOfWeek Thursday == 0;
+        //DayOfWeek Monday == 0;
+
         return (int)temp.DayOfWeek;
     }
 
     int GetTotalNumberOfDays(int year, int month)
     {
         return DateTime.DaysInMonth(year, month);
-    }*/
+    }
+
+    public void SwitchMonth(int direction)
+    {
+        if (direction == 1)
+        {
+            currentDate = currentDate.AddMonths(1);
+        }
+        else if (direction == 2)
+        {
+            currentDate = currentDate.AddMonths(2);
+        }
+        else if (direction == 3)
+        {
+            currentDate = currentDate.AddMonths(3);
+        }
+        else if (direction == 4)
+        {
+            currentDate = currentDate.AddMonths(4);
+        }
+        else if (direction == 5)
+        {
+            currentDate = currentDate.AddMonths(5);
+        }
+        else if (direction == 6)
+        {
+            currentDate = currentDate.AddMonths(6);
+        }
+        else if (direction == 7)
+        {
+            currentDate = currentDate.AddMonths(7);
+        }
+        else if (direction == 8)
+        {
+            currentDate = currentDate.AddMonths(8);
+        }
+        else if (direction == 9)
+        {
+            currentDate = currentDate.AddMonths(9);
+        }
+        else if (direction == 10)
+        {
+            currentDate = currentDate.AddMonths(10);
+        }
+        else if (direction == 11)
+        {
+            currentDate = currentDate.AddMonths(11);
+        }
+        else if (direction == 12)
+        {
+            currentDate = currentDate.AddMonths(12);
+        }
+        else
+        {
+            Debug.LogError("Unity.exe lakkasi toiminnasta");
+        }
+
+        UpdateCalendar(currentDate.Year, currentDate.Month);
+    }
 
     public void Tammikuu()
     {
         kuukausi = 1;
         kuukaudenNimi = kuukausi.ToString("Tammikuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(1);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -162,6 +226,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 2;
         kuukaudenNimi = kuukausi.ToString("Helmikuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(2);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -197,6 +262,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 3;
         kuukaudenNimi = kuukausi.ToString("Maaliskuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(3);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -235,6 +301,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 4;
         kuukaudenNimi = kuukausi.ToString("Huhtikuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(4);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -272,6 +339,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 5;
         kuukaudenNimi = kuukausi.ToString("Toukokuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(5);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -310,6 +378,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 6;
         kuukaudenNimi = kuukausi.ToString("Kesäkuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(6);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -347,6 +416,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 7;
         kuukaudenNimi = kuukausi.ToString("Heinäkuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(7);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -385,6 +455,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 8;
         kuukaudenNimi = kuukausi.ToString("Elokuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(8);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -423,6 +494,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 9;
         kuukaudenNimi = kuukausi.ToString("Syyskuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(9);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -460,6 +532,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 10;
         kuukaudenNimi = kuukausi.ToString("Lokakuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(10);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -498,6 +571,7 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 11;
         kuukaudenNimi = kuukausi.ToString("Marraskuu");
         Debug.Log(kuukaudenNimi);
+        SwitchMonth(11);
         /*Days.Add(1);
         Days.Add(2);
         Days.Add(3);
@@ -535,36 +609,37 @@ public class KuukausiArvot : MonoBehaviour
         kuukausi = 12;
         kuukaudenNimi = kuukausi.ToString("Joulukuu");
         Debug.Log(kuukaudenNimi);
-       /* Days.Add(1);
-        Days.Add(2);
-        Days.Add(3);
-        Days.Add(4);
-        Days.Add(5);
-        Days.Add(6);
-        Days.Add(7);
-        Days.Add(8);
-        Days.Add(9);
-        Days.Add(10);
-        Days.Add(11);
-        Days.Add(12);
-        Days.Add(13);
-        Days.Add(14);
-        Days.Add(15);
-        Days.Add(16);
-        Days.Add(17);
-        Days.Add(18);
-        Days.Add(19);
-        Days.Add(20);
-        Days.Add(21);
-        Days.Add(22);
-        Days.Add(23);
-        Days.Add(24);
-        Days.Add(25);
-        Days.Add(26);
-        Days.Add(27);
-        Days.Add(28);
-        Days.Add(29);
-        Days.Add(30);
-        Days.Add(31);*/
+        SwitchMonth(12);
+        /* Days.Add(1);
+         Days.Add(2);
+         Days.Add(3);
+         Days.Add(4);
+         Days.Add(5);
+         Days.Add(6);
+         Days.Add(7);
+         Days.Add(8);
+         Days.Add(9);
+         Days.Add(10);
+         Days.Add(11);
+         Days.Add(12);
+         Days.Add(13);
+         Days.Add(14);
+         Days.Add(15);
+         Days.Add(16);
+         Days.Add(17);
+         Days.Add(18);
+         Days.Add(19);
+         Days.Add(20);
+         Days.Add(21);
+         Days.Add(22);
+         Days.Add(23);
+         Days.Add(24);
+         Days.Add(25);
+         Days.Add(26);
+         Days.Add(27);
+         Days.Add(28);
+         Days.Add(29);
+         Days.Add(30);
+         Days.Add(31);*/
     }
 }
