@@ -66,7 +66,7 @@ public class KuukausiArvot : MonoBehaviour
 
         if(Days.Count == 0)
         {
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 4; i++)
             {
                 for (int a = 0; a < 7; a++)
                 {
@@ -77,10 +77,12 @@ public class KuukausiArvot : MonoBehaviour
                     if (currDay < startDay || currDay - startDay >= endDay)
                     {
                         newDay = new Day(currDay - startDay, Color.grey, weeks[i].GetChild(a).gameObject);
+                        Destroy(newDay.Obj);
                     }
                     else
                     {
                         newDay = new Day(currDay - startDay, Color.white, weeks[i].GetChild(a).gameObject);
+                        Days.Add(newDay);
                     }
 
                     Days.Add(newDay);
