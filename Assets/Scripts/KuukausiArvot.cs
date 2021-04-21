@@ -133,19 +133,96 @@ public class KuukausiArvot : MonoBehaviour
         return DateTime.DaysInMonth(year, month);
     }
 
+    /*public void DaysTotalNum()
+    {
+        int WhatMonth = 1;
+
+        int Num3 = 3;
+
+        switch (WhatMonth)
+        {
+            case 1:
+                {
+                    SwitchMonth(2);
+                    int FebDayTotal = DAYS.childCount - Num3;
+
+                    Debug.Log(FebDayTotal);
+
+                    FebDayTotal = DAYS.childCount;
+
+                    Debug.Log(DAYS.childCount);
+                }
+                break;
+        }
+    }*/
+
     public void SwitchMonth(int direction)
     {
-        int year = DateTime.Now.Year;
+        /*int year = DateTime.Now.Year;
         int month = DateTime.Now.Month;
 
         int startDay = GetMonthStartDay(year, month);
-        int endDay = GetTotalNumberOfDays(year, month);
+        int endDay = GetTotalNumberOfDays(year, month);*/
 
+         
 
         if (direction == 1)
         {
             currentDate = currentDate.AddMonths(1);
 
+            if (Days.Count == 0)
+            {
+                int daynum = -1;
+
+                for (int i = 31; i < 31; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+
+                }
+                Debug.Log(DAYS.childCount);
+
+            }
+        }
+        else if (direction == 2)
+        {
+            currentDate = currentDate.AddMonths(2);
+            if (Days.Count == 0)
+            {
+                int daynum = -1;
+
+                for (int i = 28; i < 31; ++i)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
+                Debug.Log(DAYS.childCount);
+
+                //DaysTotalNum();
+
+                /*Debug.Log(DAYS.childCount);
+                int i = 0;
+                foreach (Transform child in DAYS)
+                {
+                    i += 1;
+                    for (int i = 0; i < DAYS.childCount; i++)
+                    {
+                        Transform child = DAYS.GetChild(i);
+                    }
+                    Debug.Log(DAYS.childCount);
+                }*/
+                /*foreach (Transform child in DAYS)
+                    child.gameObject.SetActive(false);*/
+
+                //DAYS.gameObject.transform.GetChild(29).GetChild(30).GetChild(31).gameObject.SetActive(false);
+
+            }
+        }
+        else if (direction == 3)
+        {
+            currentDate = currentDate.AddMonths(3);
             if (Days.Count == 0)
             {
                 int daynum = -1;
@@ -158,14 +235,14 @@ public class KuukausiArvot : MonoBehaviour
                 }
             }
         }
-        else if (direction == 2)
+        else if (direction == 4)
         {
-            currentDate = currentDate.AddMonths(2);
+            currentDate = currentDate.AddMonths(4);
             if (Days.Count == 0)
             {
                 int daynum = -1;
 
-                for (int i = 0; i < 28; i++)
+                for (int i = 0; i < 30; i++)
                 {
                     daynum++;
                     Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
@@ -173,34 +250,19 @@ public class KuukausiArvot : MonoBehaviour
                 }
             }
         }
-        else if (direction == 3)
-        {
-            currentDate = currentDate.AddMonths(3);
-            if (Days.Count == 0)
-            {
-                Day newDay = new Day(31, Color.white, gameObject);
-
-                Days.Add(newDay);
-            }
-        }
-        else if (direction == 4)
-        {
-            currentDate = currentDate.AddMonths(4);
-            if (Days.Count == 0)
-            {
-                Day newDay = new Day(30, Color.white, gameObject);
-
-                Days.Add(newDay);
-            }
-        }
         else if (direction == 5)
         {
             currentDate = currentDate.AddMonths(5);
             if (Days.Count == 0)
             {
-                Day newDay = new Day(31, Color.white, gameObject);
+                int daynum = -1;
 
-                Days.Add(newDay);
+                for (int i = 0; i < 31; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
             }
         }
         else if (direction == 6)
@@ -208,9 +270,14 @@ public class KuukausiArvot : MonoBehaviour
             currentDate = currentDate.AddMonths(6);
             if (Days.Count == 0)
             {
-                Day newDay = new Day(30, Color.white, gameObject);
+                int daynum = -1;
 
-                Days.Add(newDay);
+                for (int i = 0; i < 30; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
             }
         }
         else if (direction == 7)
@@ -218,9 +285,14 @@ public class KuukausiArvot : MonoBehaviour
             currentDate = currentDate.AddMonths(7);
             if (Days.Count == 0)
             {
-                Day newDay = new Day(31, Color.white, gameObject);
+                int daynum = -1;
 
-                Days.Add(newDay);
+                for (int i = 0; i < 31; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
             }
         }
         else if (direction == 8)
@@ -228,9 +300,14 @@ public class KuukausiArvot : MonoBehaviour
             currentDate = currentDate.AddMonths(8);
             if (Days.Count == 0)
             {
-                Day newDay = new Day(31, Color.white, gameObject);
+                int daynum = -1;
 
-                Days.Add(newDay);
+                for (int i = 0; i < 31; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
             }
         }
         else if (direction == 9)
@@ -238,9 +315,14 @@ public class KuukausiArvot : MonoBehaviour
             currentDate = currentDate.AddMonths(9);
             if (Days.Count == 0)
             {
-                Day newDay = new Day(30, Color.white, gameObject);
+                int daynum = -1;
 
-                Days.Add(newDay);
+                for (int i = 0; i < 30; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
             }
         }
         else if (direction == 10)
@@ -248,9 +330,14 @@ public class KuukausiArvot : MonoBehaviour
             currentDate = currentDate.AddMonths(10);
             if (Days.Count == 0)
             {
-                Day newDay = new Day(31, Color.white, gameObject);
+                int daynum = -1;
 
-                Days.Add(newDay);
+                for (int i = 0; i < 31; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
             }
         }
         else if (direction == 11)
@@ -258,9 +345,14 @@ public class KuukausiArvot : MonoBehaviour
             currentDate = currentDate.AddMonths(11);
             if (Days.Count == 0)
             {
-                Day newDay = new Day(30, Color.white, gameObject);
+                int daynum = -1;
 
-                Days.Add(newDay);
+                for (int i = 0; i < 30; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
             }
         }
         else if (direction == 12)
@@ -268,9 +360,14 @@ public class KuukausiArvot : MonoBehaviour
             currentDate = currentDate.AddMonths(12);
             if (Days.Count == 0)
             {
-                Day newDay = new Day(31, Color.white, gameObject);
+                int daynum = -1;
 
-                Days.Add(newDay);
+                for (int i = 0; i < 31; i++)
+                {
+                    daynum++;
+                    Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
+                    Days.Add(newDay);
+                }
             }
         }
         else
