@@ -54,21 +54,91 @@ public class TimeControl : MonoBehaviour
     public GameObject Day30;
     public GameObject Day31;
 
+    private const int TIMESCALE = 1;
+
+    public static double second, minute, hour, day, month, year;
+
     public DateTime currentDate = DateTime.Now;
 
     void Start()
     {
         UpdateCalendar(DateTime.Now.Year, DateTime.Now.Month);
+
+        second = DateTime.Now.Second;
+        minute = DateTime.Now.Minute;
+        hour = DateTime.Now.Hour;
+        day = DateTime.Now.Day;
+        month = DateTime.Now.Month;
+        year = DateTime.Now.Year;
     }
 
-    /*private void Update()
+    void CalculateMonth()
     {
-        Debug.Log("Year: " + currentDate.Year + " , Month: " + currentDate.Month + " , Day: " + currentDate.Day + " , Hours: " + currentDate.Hour + " , Minutes: " + currentDate.Minute);
-    }*/
+        if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
+        {
+            if (day >= 32)
+            {
+                month++;
+                day = 1;
+            }
+        }
+
+        if (month == 4 || month == 6 || month == 9 || month == 11)
+        {
+            if (day >= 31)
+            {
+                month++;
+                day = 1;
+            }
+        }
+        if (month == 2)
+        {
+            month++;
+            day = 1;
+        }
+    }
+
+    void CalculateTime()
+    {
+        second += Time.deltaTime * TIMESCALE;
+
+        if (second >= 60)
+        {
+            minute++;
+            second = 0;
+        }
+        else if (minute >= 60)
+        {
+            hour++;
+            minute = 0;
+        }
+        else if (hour >= 24)
+        {
+            day++;
+            hour = 0;
+        }
+        else if (day >= 28)
+        {
+            CalculateMonth();
+        }
+        else if (month >12)
+        {
+            month = 1;
+            year++;
+        }
+
+    }
+
+
+    private void Update()
+    {
+        CalculateTime();
+        //Debug.Log("Vuodet: " + year + " Kuukaudet: " + month + " Päivät: " + day + " Tunnit: " + hour + " Minuutit: " + minute);
+    }
 
     void UpdateCalendar(int year, int month)
     {
-        DateTime date = new DateTime(year, month, 1);
+        DateTime date = new DateTime(year, month, day: 22);
 
 
         currentDate = date;
@@ -162,12 +232,6 @@ public class TimeControl : MonoBehaviour
 
     public void SwitchMonth(int direction)
     {
-        /*int year = DateTime.Now.Year;
-        int month = DateTime.Now.Month;
-
-        int startDay = GetMonthStartDay(year, month);
-        int endDay = GetTotalNumberOfDays(year, month);*/
-
 
 
         if (direction == 1)
@@ -220,6 +284,7 @@ public class TimeControl : MonoBehaviour
                     Day31.SetActive(false);
                     return;
                 }
+
 
                 //DaysTotalNum();
 
