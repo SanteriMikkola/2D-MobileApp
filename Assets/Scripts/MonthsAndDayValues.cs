@@ -8,9 +8,9 @@ public class MonthsAndDayValues : MonoBehaviour
 {
     //Values and gameobjects
 
-   /* private string a;
+    /*private string a;
+    readonly TimeControl timeControl;
 
-    TimeControl timeControl;
 
     void Start()
     {
@@ -47,11 +47,13 @@ public class MonthsAndDayValues : MonoBehaviour
     public GameObject Day28;
     public GameObject Day29;
     public GameObject Day30;
-    public GameObject Day31;*/
+    public GameObject Day31;
 
-    /*void Update()
+    void Update()
     {
         
+
+        switch()
 
         if ()
         {
