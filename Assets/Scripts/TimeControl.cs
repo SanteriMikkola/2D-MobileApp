@@ -207,28 +207,101 @@ public class TimeControl : MonoBehaviour
         return DateTime.DaysInMonth(year, month);
     }
 
-    /*public void DaysTotalNum()
+    public void Year2024()
     {
-        int WhatMonth = 1;
+        YearChooser(1);
+        YearValue = 2024;
+    }
+    public void Year2028()
+    {
+        YearChooser(2);
+        YearValue = 2028;
+    }
+    public void Year2032()
+    {
+        YearChooser(3);
+        YearValue = 2032;
+    }
 
-        int Num3 = 3;
+    private int YearValue;
+    private int casevalue;
 
-        switch (WhatMonth)
+    public void YearChooser(int value)
+    {
+
+        if (value == 1)
         {
-            case 1:
-                {
-                    SwitchMonth(2);
-                    int FebDayTotal = DAYS.childCount - Num3;
-
-                    Debug.Log(FebDayTotal);
-
-                    FebDayTotal = DAYS.childCount;
-
-                    Debug.Log(DAYS.childCount);
-                }
-                break;
+            casevalue = 1;
+            YearValue = 2024;
         }
-    }*/
+        else if (value == 2)
+        {
+            casevalue = 1;
+            YearValue = 2028;
+        }
+        else if (value == 3)
+        {
+            casevalue = 1;
+            YearValue = 2032;
+        }
+        //return;
+    }
+
+    public void YearControll()
+    {
+        
+
+        int WhatYear = YearValue;
+
+        int CaseValue = 1;
+        Debug.Log("Mikä vuosi: " + YearValue);
+        Debug.Log("Mikä CaseValue: " + casevalue);
+
+        if (CaseValue == casevalue)
+        {
+            if (WhatYear != 2024 || WhatYear != 2028 || WhatYear != 2032)
+            {
+                //SwitchMonth(2);
+
+                Debug.Log("Toimiiko?");
+
+                Day29.SetActive(true);
+                
+            }
+            else if (WhatYear == 2021 || WhatYear == 2022 || WhatYear == 2023 || WhatYear == 2025 || WhatYear == 2026 || WhatYear == 2027)
+            {
+
+                Debug.Log("Toimii!");
+
+                Day29.SetActive(false);
+                
+            }
+            
+        }
+                
+
+            /*default:
+                {
+                    Debug.Log("Jotain meni pieleen!!!");
+                    if (WhatYear == 2024 || WhatYear == 2028 || WhatYear == 2032)
+                    {
+                        SwitchMonth(2);
+
+                        Day29.SetActive(true);
+                        return;
+                    }
+                    else if (WhatYear == 2021 || WhatYear == 2022 || WhatYear == 2023 || WhatYear == 2025 || WhatYear == 2026 || WhatYear == 2027)
+                    {
+                        SwitchMonth(2);
+
+                        Day29.SetActive(false);
+                        return;
+                    }
+                    return;
+                }
+                break;*/
+    }
+
 
     public void SwitchMonth(int direction)
     {
@@ -275,11 +348,13 @@ public class TimeControl : MonoBehaviour
                     Day newDay = new Day(daynum, Color.white, DAYS.GetChild(i).gameObject);
                     Days.Add(newDay);
                 }
-                
+
 
                 if (DAYS.childCount > 28)
                 {
-                    Day29.SetActive(false);
+                    YearControll();
+
+                    //Day29.SetActive(false);
                     Day30.SetActive(false);
                     Day31.SetActive(false);
                     return;
@@ -596,7 +671,6 @@ public class TimeControl : MonoBehaviour
                 return;
             }
             //Days.RemoveAll(Days.Contains);
-            return;
         }
         else
         {
@@ -604,6 +678,7 @@ public class TimeControl : MonoBehaviour
         }
 
         UpdateCalendar(currentDate.Year, currentDate.Month);
+        return;
     }
 
     public void Tammikuu()
