@@ -1426,6 +1426,8 @@ MonoBehaviour:
   Day29: {fileID: 571138847}
   Day30: {fileID: 1991454429}
   Day31: {fileID: 2100396707}
+  YearValue: 0
+  casevalue: 0
 --- !u!1 &191386952
 GameObject:
   m_ObjectHideFlags: 0
@@ -2816,8 +2818,8 @@ RectTransform:
   m_Father: {fileID: 410822964}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.23034725}
+  m_AnchorMax: {x: 1, y: 0.865268}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5904,6 +5906,8 @@ MonoBehaviour:
   Day29: {fileID: 571138847}
   Day30: {fileID: 1991454429}
   Day31: {fileID: 2100396707}
+  YearValue: 0
+  casevalue: 0
 --- !u!114 &603198043
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7121,6 +7125,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: YearControll
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -8887,6 +8903,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: Year2032
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: YearControll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &920550730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9829,8 +9869,8 @@ RectTransform:
   m_Father: {fileID: 2051822594}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5165474}
-  m_AnchorMax: {x: 1, y: 0.9266122}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -10122,7 +10162,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1036353387
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11712,7 +11752,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1247.9998}
+  m_AnchoredPosition: {x: 0, y: -1110.4346}
   m_SizeDelta: {x: 0, y: 2603.1685}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1309215555
@@ -11732,6 +11772,8 @@ MonoBehaviour:
   Day29: {fileID: 571138847}
   Day30: {fileID: 1991454429}
   Day31: {fileID: 2100396707}
+  YearValue: 0
+  casevalue: 0
 --- !u!114 &1309215556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12574,6 +12616,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: Year2028
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: YearControll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1462327710
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13383,6 +13449,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: YearControll
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -16265,8 +16343,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1013732517}
   m_HandleRect: {fileID: 1013732516}
   m_Direction: 2
-  m_Value: 0.8756002
-  m_Size: 0.41006482
+  m_Value: 0.8380218
+  m_Size: 0.38459143
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -17413,6 +17491,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: Year2024
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: YearControll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1962980010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17927,6 +18029,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: YearControll
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2012892499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17982,7 +18096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2022208449
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18143,6 +18257,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1309215555}
+        m_TargetAssemblyTypeName: TimeControl, Assembly-CSharp
+        m_MethodName: YearControll
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19361,8 +19487,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 374961259}
   m_HandleRect: {fileID: 374961258}
   m_Direction: 2
-  m_Value: 0.61640114
-  m_Size: 0.63492066
+  m_Value: 0.6309513
+  m_Size: 0.6349207
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
