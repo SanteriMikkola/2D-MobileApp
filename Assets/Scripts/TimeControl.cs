@@ -210,21 +210,21 @@ public class TimeControl : MonoBehaviour
     public void Year2024()
     {
         YearChooser(1);
-        YearValue = 2024;
+        //YearValue = 2024;
     }
     public void Year2028()
     {
         YearChooser(2);
-        YearValue = 2028;
+        //YearValue = 2028;
     }
     public void Year2032()
     {
         YearChooser(3);
-        YearValue = 2032;
+        //YearValue = 2032;
     }
 
-    private int YearValue;
-    private int casevalue;
+    private double YearValue;
+    private double casevalue;
 
     public void YearChooser(int value)
     {
@@ -251,7 +251,7 @@ public class TimeControl : MonoBehaviour
     {
         
 
-        int WhatYear = YearValue;
+        //int WhatYear = (int)YearValue;
 
         int CaseValue = 1;
         Debug.Log("Mikä vuosi: " + YearValue);
@@ -259,7 +259,7 @@ public class TimeControl : MonoBehaviour
 
         if (CaseValue == casevalue)
         {
-            if (WhatYear != 2024 || WhatYear != 2028 || WhatYear != 2032)
+            if (YearValue == 2024 || YearValue == 2028 || YearValue == 2032)
             {
                 //SwitchMonth(2);
 
@@ -268,7 +268,7 @@ public class TimeControl : MonoBehaviour
                 Day29.SetActive(true);
                 
             }
-            else if (WhatYear == 2021 || WhatYear == 2022 || WhatYear == 2023 || WhatYear == 2025 || WhatYear == 2026 || WhatYear == 2027)
+            else if (YearValue == 2021 || YearValue == 2022 || YearValue == 2023 || YearValue == 2025 || YearValue == 2026 || YearValue == 2027)
             {
 
                 Debug.Log("Toimii!");
@@ -278,28 +278,6 @@ public class TimeControl : MonoBehaviour
             }
             
         }
-                
-
-            /*default:
-                {
-                    Debug.Log("Jotain meni pieleen!!!");
-                    if (WhatYear == 2024 || WhatYear == 2028 || WhatYear == 2032)
-                    {
-                        SwitchMonth(2);
-
-                        Day29.SetActive(true);
-                        return;
-                    }
-                    else if (WhatYear == 2021 || WhatYear == 2022 || WhatYear == 2023 || WhatYear == 2025 || WhatYear == 2026 || WhatYear == 2027)
-                    {
-                        SwitchMonth(2);
-
-                        Day29.SetActive(false);
-                        return;
-                    }
-                    return;
-                }
-                break;*/
     }
 
 
@@ -357,7 +335,7 @@ public class TimeControl : MonoBehaviour
                     //Day29.SetActive(false);
                     Day30.SetActive(false);
                     Day31.SetActive(false);
-                    return;
+                    //return;
                 }
 
 
