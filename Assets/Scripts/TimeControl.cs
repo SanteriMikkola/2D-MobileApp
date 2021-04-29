@@ -43,8 +43,46 @@ public class TimeControl : MonoBehaviour
         }
 
     }
+    public class Minute
+    {
+        public int MinuteNum;
+        public GameObject Object;
+        public Color MinuteColor;
+
+        public Minute(int MinuteNum, Color MinuteColor, GameObject Object)
+        {
+            this.MinuteNum = MinuteNum;
+            this.Object = Object;
+            UpdateMinuteColor(MinuteColor);
+            UpdateMinute(MinuteNum);
+        }
+
+        public void UpdateMinuteColor(Color newColor)
+        {
+            Object.GetComponent<Image>().color = newColor;
+            MinuteColor = newColor;
+        }
+
+        public void UpdateMinute(int newMinuteNum)
+        {
+            this.MinuteNum = newMinuteNum;
+            if (MinuteColor == Color.white)
+            {
+                Object.GetComponentInChildren<Text>().text = string.Format("{0:00}", MinuteNum + 1);
+            }
+            else
+            {
+                Object.GetComponentInChildren<Text>().text = "";
+            }
+        }
+
+    }
 
     private readonly List<Day> Days = new List<Day>();
+
+    private List<Minute> Minutes = new List<Minute>();
+
+    public Transform Minuutit;
 
     public Transform[] weeks;
 
@@ -70,6 +108,7 @@ public class TimeControl : MonoBehaviour
         day = DateTime.Now.Day;
         month = DateTime.Now.Month;
         year = DateTime.Now.Year;
+
     }
 
     void CalculateMonth()
@@ -129,11 +168,11 @@ public class TimeControl : MonoBehaviour
 
     }
 
-
     private void Update()
     {
         CalculateTime();
         //Debug.Log("Vuodet: " + year + " Kuukaudet: " + month + " Päivät: " + day + " Tunnit: " + hour + " Minuutit: " + minute);
+
     }
 
     void UpdateCalendar(int year, int month)
@@ -206,25 +245,94 @@ public class TimeControl : MonoBehaviour
     {
         return DateTime.DaysInMonth(year, month);
     }
-
-    public void Year2024()
+    public void Year2021()
     {
         YearChooser(1);
-        //YearValue = 2024;
+    }
+    public void Year2022()
+    {
+        YearChooser(2);
+    }
+    public void Year2023()
+    {
+        YearChooser(3);
+    }
+    public void Year2024()
+    {
+        YearChooser(4);
+    }
+    public void Year2025()
+    {
+        YearChooser(5);
+    }
+    public void Year2026()
+    {
+        YearChooser(6);
+    }
+    public void Year2027()
+    {
+        YearChooser(7);
     }
     public void Year2028()
     {
-        YearChooser(2);
-        //YearValue = 2028;
+        YearChooser(8);
+    }
+    public void Year2029()
+    {
+        YearChooser(9);
+    }
+    public void Year2030()
+    {
+        YearChooser(10);
+    }
+    public void Year2031()
+    {
+        YearChooser(11);
     }
     public void Year2032()
     {
-        YearChooser(3);
-        //YearValue = 2032;
+        YearChooser(12);
+    }
+    public void Year2033()
+    {
+        YearChooser(13);
+    }
+    public void Year2034()
+    {
+        YearChooser(14);
+    }
+    public void Year2035()
+    {
+        YearChooser(15);
+    }
+    public void Year2036()
+    {
+        YearChooser(16);
+    }
+    public void Year2037()
+    {
+        YearChooser(17);
+    }
+    public void Year2038()
+    {
+        YearChooser(18);
+    }
+    public void Year2039()
+    {
+        YearChooser(19);
+    }
+    public void Year2040()
+    {
+        YearChooser(20);
+    }
+    public void Year2041()
+    {
+        YearChooser(21);
     }
 
-    private double YearValue;
-    private double casevalue;
+
+    private static double YearValue;
+    private static double casevalue;
 
     public void YearChooser(int value)
     {
@@ -232,17 +340,107 @@ public class TimeControl : MonoBehaviour
         if (value == 1)
         {
             casevalue = 1;
-            YearValue = 2024;
+            YearValue = 2021;
         }
         else if (value == 2)
         {
             casevalue = 1;
-            YearValue = 2028;
+            YearValue = 2022;
         }
         else if (value == 3)
         {
             casevalue = 1;
+            YearValue = 2023;
+        }
+        else if (value == 4)
+        {
+            casevalue = 1;
+            YearValue = 2024;
+        }
+        else if (value == 5)
+        {
+            casevalue = 1;
+            YearValue = 2025;
+        }
+        else if (value == 6)
+        {
+            casevalue = 1;
+            YearValue = 2026;
+        }
+        else if (value == 7)
+        {
+            casevalue = 1;
+            YearValue = 2027;
+        }
+        else if (value == 8)
+        {
+            casevalue = 1;
+            YearValue = 2028;
+        }
+        else if (value == 9)
+        {
+            casevalue = 1;
+            YearValue = 2029;
+        }
+        else if (value == 10)
+        {
+            casevalue = 1;
+            YearValue = 2030;
+        }
+        else if (value == 11)
+        {
+            casevalue = 1;
+            YearValue = 2031;
+        }
+        else if (value == 12)
+        {
+            casevalue = 1;
             YearValue = 2032;
+        }
+        else if (value == 13)
+        {
+            casevalue = 1;
+            YearValue = 2033;
+        }
+        else if (value == 14)
+        {
+            casevalue = 1;
+            YearValue = 2034;
+        }
+        else if (value == 15)
+        {
+            casevalue = 1;
+            YearValue = 2035;
+        }
+        else if (value == 16)
+        {
+            casevalue = 1;
+            YearValue = 2036;
+        }
+        else if (value == 17)
+        {
+            casevalue = 1;
+            YearValue = 2037;
+        }
+        else if (value == 18)
+        {
+            casevalue = 1;
+            YearValue = 2038;
+        }
+        else if (value == 19)
+        {
+            casevalue = 1;
+            YearValue = 2039;
+        }
+        else if (value == 20)
+        {
+            casevalue = 1;
+            YearValue = 2040;
+        }
+        else if (value == 21)
+        {
+            casevalue = 1;
+            YearValue = 2041;
         }
         //return;
     }
@@ -251,33 +449,49 @@ public class TimeControl : MonoBehaviour
     {
         
 
-        //int WhatYear = (int)YearValue;
-
         int CaseValue = 1;
         Debug.Log("Mikä vuosi: " + YearValue);
-        Debug.Log("Mikä CaseValue: " + casevalue);
 
         if (CaseValue == casevalue)
         {
-            if (YearValue == 2024 || YearValue == 2028 || YearValue == 2032)
+            if (YearValue == 2024 || YearValue == 2028 || YearValue == 2032 || YearValue == 2036 || YearValue == 2040)
             {
-                //SwitchMonth(2);
-
-                Debug.Log("Toimiiko?");
-
                 Day29.SetActive(true);
                 
             }
-            else if (YearValue == 2021 || YearValue == 2022 || YearValue == 2023 || YearValue == 2025 || YearValue == 2026 || YearValue == 2027)
+            else if (YearValue == 2021 || YearValue == 2022 || YearValue == 2023 || YearValue == 2025 || YearValue == 2026 || YearValue == 2027 || YearValue == 2029 || YearValue == 2030 || YearValue == 2031 || YearValue == 2033 || YearValue == 2034 || YearValue == 2035 || YearValue == 2037 || YearValue == 2038 || YearValue == 2039 || YearValue == 2041)
             {
-
-                Debug.Log("Toimii!");
-
                 Day29.SetActive(false);
                 
             }
             
         }
+    }
+
+    public void MinuteFactory(int a)
+    {
+        if (a == 1)
+        {
+            if (Minutes.Count == 0)
+            {
+                int minuteNum = -01;
+
+                for (int i = 0; i < 59; i++)
+                {
+                    minuteNum++;
+                    Minute newMinute = new Minute(minuteNum, Color.white, Minuutit.GetChild(i).gameObject);
+                    Minutes.Add(newMinute);
+                }
+                Debug.Log(Minutes.Count);
+                return;
+            }
+            return;
+        }
+    }
+
+    public void UpdateTime()
+    {
+        MinuteFactory(1);
     }
 
 
