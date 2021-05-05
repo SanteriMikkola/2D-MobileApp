@@ -6,8 +6,8 @@ using UnityEngine.UI;
 
 public class TimeControl : MonoBehaviour
 {
-    private int kuukausi;
-    private string kuukaudenNimi;
+    private static int kuukausi;
+    private static string kuukaudenNimi;
 
     public class Day
     {
@@ -78,7 +78,7 @@ public class TimeControl : MonoBehaviour
 
     }
 
-    private readonly List<Day> Days = new List<Day>();
+    private static List<Day> Days = new List<Day>();
 
     private List<Minute> Minutes = new List<Minute>();
 
@@ -91,6 +91,11 @@ public class TimeControl : MonoBehaviour
     public GameObject Day29;
     public GameObject Day30;
     public GameObject Day31;
+
+    public Text yearText;
+    public Text monthText;
+    public Text dayText;
+    public Text clockText;
 
     private const int TIMESCALE = 1;
 
@@ -108,7 +113,14 @@ public class TimeControl : MonoBehaviour
         day = DateTime.Now.Day;
         month = DateTime.Now.Month;
         year = DateTime.Now.Year;
+    }
 
+    void TextCallFunction()
+    {
+        yearText.text = "Year: " + YearValue;
+        monthText.text = "Month: " + kuukaudenNimi;
+        dayText.text = "Day: " + Days.Count;
+        clockText.text = string.Format("Time: " + "{0:00}:{1:00}", hourNum, minuteNum);
     }
 
     void CalculateMonth()
@@ -172,8 +184,210 @@ public class TimeControl : MonoBehaviour
     {
         CalculateTime();
         //Debug.Log("Vuodet: " + year + " Kuukaudet: " + month + " Päivät: " + day + " Tunnit: " + hour + " Minuutit: " + minute);
+        TextCallFunction();
+    }
+
+    public void Hour01()
+    {
+        HourMachine(1);
+    }
+    public void Hour02()
+    {
+        HourMachine(2);
+    }
+    public void Hour03()
+    {
+        HourMachine(3);
+    }
+    public void Hour04()
+    {
+        HourMachine(4);
+    }
+    public void Hour05()
+    {
+        HourMachine(5);
+    }
+    public void Hour06()
+    {
+        HourMachine(6);
+    }
+    public void Hour07()
+    {
+        HourMachine(7);
+    }
+    public void Hour08()
+    {
+        HourMachine(8);
+    }
+    public void Hour09()
+    {
+        HourMachine(9);
+    }
+    public void Hour10()
+    {
+        HourMachine(10);
+    }
+    public void Hour11()
+    {
+        HourMachine(11);
+    }
+    public void Hour12()
+    {
+        HourMachine(12);
+    }
+    public void Hour13()
+    {
+        HourMachine(13);
+    }
+    public void Hour14()
+    {
+        HourMachine(14);
+    }
+    public void Hour15()
+    {
+        HourMachine(15);
+    }
+    public void Hour16()
+    {
+        HourMachine(16);
+    }
+    public void Hour17()
+    {
+        HourMachine(17);
+    }
+    public void Hour18()
+    {
+        HourMachine(18);
+    }
+    public void Hour19()
+    {
+        HourMachine(19);
+    }
+    public void Hour20()
+    {
+        HourMachine(20);
+    }
+    public void Hour21()
+    {
+        HourMachine(21);
+    }
+    public void Hour22()
+    {
+        HourMachine(22);
+    }
+    public void Hour23()
+    {
+        HourMachine(23);
+    }
+    public void Hour00()
+    {
+        HourMachine(24);
+    }
+
+    private static int hourNum;
+
+    void HourMachine(int tunti)
+    {
+
+        if (tunti == 1)
+        {
+            hourNum = 01;
+        }
+        else if (tunti == 2)
+        {
+            hourNum = 02;
+        }
+        else if (tunti == 3)
+        {
+            hourNum = 03;
+        }
+        else if (tunti == 4)
+        {
+            hourNum = 04;
+        }
+        else if (tunti == 5)
+        {
+            hourNum = 05;
+        }
+        else if (tunti == 6)
+        {
+            hourNum = 06;
+        }
+        else if (tunti == 7)
+        {
+            hourNum = 07;
+        }
+        else if (tunti == 8)
+        {
+            hourNum = 08;
+        }
+        else if (tunti == 9)
+        {
+            hourNum = 09;
+        }
+        else if (tunti == 10)
+        {
+            hourNum = 10;
+        }
+        else if (tunti == 11)
+        {
+            hourNum = 11;
+        }
+        else if (tunti == 12)
+        {
+            hourNum = 12;
+        }
+        else if (tunti == 13)
+        {
+            hourNum = 13;
+        }
+        else if (tunti == 14)
+        {
+            hourNum = 14;
+        }
+        else if (tunti == 15)
+        {
+            hourNum = 15;
+        }
+        else if (tunti == 16)
+        {
+            hourNum = 16;
+        }
+        else if (tunti == 17)
+        {
+            hourNum = 17;
+        }
+        else if (tunti == 18)
+        {
+            hourNum = 18;
+        }
+        else if (tunti == 19)
+        {
+            hourNum = 19;
+        }
+        else if (tunti == 20)
+        {
+            hourNum = 20;
+        }
+        else if (tunti == 21)
+        {
+            hourNum = 21;
+        }
+        else if (tunti == 22)
+        {
+            hourNum = 22;
+        }
+        else if (tunti == 23)
+        {
+            hourNum = 23;
+        }
+        else if (tunti == 24)
+        {
+            hourNum = 00;
+        }
 
     }
+
 
     void UpdateCalendar(int year, int month)
     {
@@ -245,6 +459,7 @@ public class TimeControl : MonoBehaviour
     {
         return DateTime.DaysInMonth(year, month);
     }
+
     public void Year2021()
     {
         YearChooser(1);
@@ -462,11 +677,12 @@ public class TimeControl : MonoBehaviour
             else if (YearValue == 2021 || YearValue == 2022 || YearValue == 2023 || YearValue == 2025 || YearValue == 2026 || YearValue == 2027 || YearValue == 2029 || YearValue == 2030 || YearValue == 2031 || YearValue == 2033 || YearValue == 2034 || YearValue == 2035 || YearValue == 2037 || YearValue == 2038 || YearValue == 2039 || YearValue == 2041)
             {
                 Day29.SetActive(false);
-                
             }
             
         }
     }
+
+    private static int minuteNum;
 
     public void MinuteFactory(int a)
     {
@@ -474,7 +690,7 @@ public class TimeControl : MonoBehaviour
         {
             if (Minutes.Count == 0)
             {
-                int minuteNum = -01;
+                minuteNum = -01;
 
                 for (int i = 0; i < 59; i++)
                 {
@@ -541,6 +757,7 @@ public class TimeControl : MonoBehaviour
                     Days.Add(newDay);
                 }
 
+                Debug.Log("DaysCount: " + Days.Capacity);
 
                 if (DAYS.childCount > 28)
                 {
@@ -549,8 +766,15 @@ public class TimeControl : MonoBehaviour
                     //Day29.SetActive(false);
                     Day30.SetActive(false);
                     Day31.SetActive(false);
+                    //Days.RemoveAt(30);
+                    //Days.RemoveAt(31);
                     //return;
                 }
+
+                /*for (int i = 0; i < 2; ++i)
+                {
+                    Destroy(DAYS.GetChild(i));
+                }*/
 
 
                 //DaysTotalNum();
