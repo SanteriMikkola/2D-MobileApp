@@ -119,8 +119,8 @@ public class TimeControl : MonoBehaviour
     {
         yearText.text = "Year: " + YearValue;
         monthText.text = "Month: " + kuukaudenNimi;
-        dayText.text = "Day: " + Days.Count;
-        clockText.text = string.Format("Time: " + "{0:00}:{1:00}", hourNum, minuteNum);
+        dayText.text = "Day: " + PaivaNum;
+        clockText.text = string.Format("Time: " + "{0:00}:{1:00}", hourNum, MinNum);
     }
 
     void CalculateMonth()
@@ -385,7 +385,749 @@ public class TimeControl : MonoBehaviour
         {
             hourNum = 00;
         }
+    }
 
+    public void Minute01()
+    {
+        MinuteMachine(1);
+    }
+    public void Minute02()
+    {
+        MinuteMachine(2);
+    }
+    public void Minute03()
+    {
+        MinuteMachine(3);
+    }
+    public void Minute04()
+    {
+        MinuteMachine(4);
+    }
+    public void Minute05()
+    {
+        MinuteMachine(5);
+    }
+    public void Minute06()
+    {
+        MinuteMachine(6);
+    }
+    public void Minute07()
+    {
+        MinuteMachine(7);
+    }
+    public void Minute08()
+    {
+        MinuteMachine(8);
+    }
+    public void Minute09()
+    {
+        MinuteMachine(9);
+    }
+    public void Minute10()
+    {
+        MinuteMachine(10);
+    }
+    public void Minute11()
+    {
+        MinuteMachine(11);
+    }
+    public void Minute12()
+    {
+        MinuteMachine(12);
+    }
+    public void Minute13()
+    {
+        MinuteMachine(13);
+    }
+    public void Minute14()
+    {
+        MinuteMachine(14);
+    }
+    public void Minute15()
+    {
+        MinuteMachine(15);
+    }
+    public void Minute16()
+    {
+        MinuteMachine(16);
+    }
+    public void Minute17()
+    {
+        MinuteMachine(17);
+    }
+    public void Minute18()
+    {
+        MinuteMachine(18);
+    }
+    public void Minute19()
+    {
+        MinuteMachine(19);
+    }
+    public void Minute20()
+    {
+        MinuteMachine(20);
+    }
+    public void Minute21()
+    {
+        MinuteMachine(21);
+    }
+    public void Minute22()
+    {
+        MinuteMachine(22);
+    }
+    public void Minute23()
+    {
+        MinuteMachine(23);
+    }
+    public void Minute24()
+    {
+        MinuteMachine(24);
+    }
+    public void Minute25()
+    {
+        MinuteMachine(25);
+    }
+    public void Minute26()
+    {
+        MinuteMachine(26);
+    }
+    public void Minute27()
+    {
+        MinuteMachine(27);
+    }
+    public void Minute28()
+    {
+        MinuteMachine(28);
+    }
+    public void Minute29()
+    {
+        MinuteMachine(29);
+    }
+    public void Minute30()
+    {
+        MinuteMachine(30);
+    }
+    public void Minute31()
+    {
+        MinuteMachine(31);
+    }
+    public void Minute32()
+    {
+        MinuteMachine(32);
+    }
+    public void Minute33()
+    {
+        MinuteMachine(33);
+    }
+    public void Minute34()
+    {
+        MinuteMachine(34);
+    }
+    public void Minute35()
+    {
+        MinuteMachine(35);
+    }
+    public void Minute36()
+    {
+        MinuteMachine(36);
+    }
+    public void Minute37()
+    {
+        MinuteMachine(37);
+    }
+    public void Minute38()
+    {
+        MinuteMachine(38);
+    }
+    public void Minute39()
+    {
+        MinuteMachine(39);
+    }
+    public void Minute40()
+    {
+        MinuteMachine(40);
+    }
+    public void Minute41()
+    {
+        MinuteMachine(41);
+    }
+    public void Minute42()
+    {
+        MinuteMachine(42);
+    }
+    public void Minute43()
+    {
+        MinuteMachine(43);
+    }
+    public void Minute44()
+    {
+        MinuteMachine(44);
+    }
+    public void Minute45()
+    {
+        MinuteMachine(45);
+    }
+    public void Minute46()
+    {
+        MinuteMachine(46);
+    }
+    public void Minute47()
+    {
+        MinuteMachine(47);
+    }
+    public void Minute48()
+    {
+        MinuteMachine(48);
+    }
+    public void Minute49()
+    {
+        MinuteMachine(49);
+    }
+    public void Minute50()
+    {
+        MinuteMachine(50);
+    }
+    public void Minute51()
+    {
+        MinuteMachine(51);
+    }
+    public void Minute52()
+    {
+        MinuteMachine(52);
+    }
+    public void Minute53()
+    {
+        MinuteMachine(53);
+    }
+    public void Minute54()
+    {
+        MinuteMachine(54);
+    }
+    public void Minute55()
+    {
+        MinuteMachine(55);
+    }
+    public void Minute56()
+    {
+        MinuteMachine(56);
+    }
+    public void Minute057()
+    {
+        MinuteMachine(57);
+    }
+    public void Minute58()
+    {
+        MinuteMachine(58);
+    }
+    public void Minute59()
+    {
+        MinuteMachine(59);
+    }
+    public void Minute00()
+    {
+        MinuteMachine(60);
+    }
+
+    private static int MinNum;
+
+    void MinuteMachine(int min)
+    {
+
+        if (min == 1)
+        {
+            MinNum = 01;
+        }
+        else if (min == 2)
+        {
+            MinNum = 02;
+        }
+        else if (min == 3)
+        {
+            MinNum = 03;
+        }
+        else if (min == 4)
+        {
+            MinNum = 04;
+        }
+        else if (min == 5)
+        {
+            MinNum = 05;
+        }
+        else if (min == 6)
+        {
+            MinNum = 06;
+        }
+        else if (min == 7)
+        {
+            MinNum = 07;
+        }
+        else if (min == 8)
+        {
+            MinNum = 08;
+        }
+        else if (min == 9)
+        {
+            MinNum = 09;
+        }
+        else if (min == 10)
+        {
+            MinNum = 10;
+        }
+        else if (min == 11)
+        {
+            MinNum = 11;
+        }
+        else if (min == 12)
+        {
+            MinNum = 12;
+        }
+        else if (min == 13)
+        {
+            MinNum = 13;
+        }
+        else if (min == 14)
+        {
+            MinNum = 14;
+        }
+        else if (min == 15)
+        {
+            MinNum = 15;
+        }
+        else if (min == 16)
+        {
+            MinNum = 16;
+        }
+        else if (min == 17)
+        {
+            MinNum = 17;
+        }
+        else if (min == 18)
+        {
+            MinNum = 18;
+        }
+        else if (min == 19)
+        {
+            MinNum = 19;
+        }
+        else if (min == 20)
+        {
+            MinNum = 20;
+        }
+        else if (min == 21)
+        {
+            MinNum = 21;
+        }
+        else if (min == 22)
+        {
+            MinNum = 22;
+        }
+        else if (min == 23)
+        {
+            MinNum = 23;
+        }
+        else if (min == 24)
+        {
+            MinNum = 24;
+        }
+        else if (min == 25)
+        {
+            MinNum = 25;
+        }
+        else if (min == 26)
+        {
+            MinNum = 26;
+        }
+        else if (min == 27)
+        {
+            MinNum = 27;
+        }
+        else if (min == 28)
+        {
+            MinNum = 28;
+        }
+        else if (min == 29)
+        {
+            MinNum = 29;
+        }
+        else if (min == 30)
+        {
+            MinNum = 30;
+        }
+        else if (min == 31)
+        {
+            MinNum = 31;
+        }
+        else if (min == 32)
+        {
+            MinNum = 32;
+        }
+        else if (min == 33)
+        {
+            MinNum = 33;
+        }
+        else if (min == 34)
+        {
+            MinNum = 34;
+        }
+        else if (min == 35)
+        {
+            MinNum = 35;
+        }
+        else if (min == 36)
+        {
+            MinNum = 36;
+        }
+        else if (min == 37)
+        {
+            MinNum = 37;
+        }
+        else if (min == 38)
+        {
+            MinNum = 38;
+        }
+        else if (min == 39)
+        {
+            MinNum = 39;
+        }
+        else if (min == 40)
+        {
+            MinNum = 40;
+        }
+        else if (min == 41)
+        {
+            MinNum = 41;
+        }
+        else if (min == 42)
+        {
+            MinNum = 42;
+        }
+        else if (min == 43)
+        {
+            MinNum = 43;
+        }
+        else if (min == 44)
+        {
+            MinNum = 44;
+        }
+        else if (min == 45)
+        {
+            MinNum = 45;
+        }
+        else if (min == 46)
+        {
+            MinNum = 46;
+        }
+        else if (min == 47)
+        {
+            MinNum = 47;
+        }
+        else if (min == 48)
+        {
+            MinNum = 48;
+        }
+        else if (min == 49)
+        {
+            MinNum = 49;
+        }
+        else if (min == 50)
+        {
+            MinNum = 50;
+        }
+        else if (min == 51)
+        {
+            MinNum = 51;
+        }
+        else if (min == 52)
+        {
+            MinNum = 52;
+        }
+        else if (min == 53)
+        {
+            MinNum = 53;
+        }
+        else if (min == 54)
+        {
+            MinNum = 54;
+        }
+        else if (min == 55)
+        {
+            MinNum = 55;
+        }
+        else if (min == 56)
+        {
+            MinNum = 56;
+        }
+        else if (min == 57)
+        {
+            MinNum = 57;
+        }
+        else if (min == 58)
+        {
+            MinNum = 58;
+        }
+        else if (min == 59)
+        {
+            MinNum = 59;
+        }
+        else if (min == 60)
+        {
+            MinNum = 00;
+        }
+    }
+
+    public void Day01()
+    {
+        DayMachine(1);
+    }
+    public void Day02()
+    {
+        DayMachine(2);
+    }
+    public void Day03()
+    {
+        DayMachine(3);
+    }
+    public void Day04()
+    {
+        DayMachine(4);
+    }
+    public void Day05()
+    {
+        DayMachine(5);
+    }
+    public void Day06()
+    {
+        DayMachine(6);
+    }
+    public void Day07()
+    {
+        DayMachine(7);
+    }
+    public void Day08()
+    {
+        DayMachine(8);
+    }
+    public void Day09()
+    {
+        DayMachine(9);
+    }
+    public void Day10()
+    {
+        DayMachine(10);
+    }
+    public void Day11()
+    {
+        DayMachine(11);
+    }
+    public void Day12()
+    {
+        DayMachine(12);
+    }
+    public void Day13()
+    {
+        DayMachine(13);
+    }
+    public void Day14()
+    {
+        DayMachine(14);
+    }
+    public void Day15()
+    {
+        DayMachine(15);
+    }
+    public void Day16()
+    {
+        DayMachine(16);
+    }
+    public void Day17()
+    {
+        DayMachine(17);
+    }
+    public void Day18()
+    {
+        DayMachine(18);
+    }
+    public void Day19()
+    {
+        DayMachine(19);
+    }
+    public void Day20()
+    {
+        DayMachine(20);
+    }
+    public void Day21()
+    {
+        DayMachine(21);
+    }
+    public void Day22()
+    {
+        DayMachine(22);
+    }
+    public void Day23()
+    {
+        DayMachine(23);
+    }
+    public void Day24()
+    {
+        DayMachine(24);
+    }
+    public void Day25()
+    {
+        DayMachine(25);
+    }
+    public void Day26()
+    {
+        DayMachine(26);
+    }
+    public void Day27()
+    {
+        DayMachine(27);
+    }
+    public void Day28()
+    {
+        DayMachine(28);
+    }
+    public void day29()
+    {
+        DayMachine(29);
+    }
+    public void day30()
+    {
+        DayMachine(30);
+    }
+    public void day31()
+    {
+        DayMachine(31);
+    }
+
+    public static int PaivaNum;
+
+    void DayMachine(int day)
+    {
+        if (day == 1)
+        {
+            PaivaNum = 01;
+        }
+        else if (day == 2)
+        {
+            PaivaNum = 02;
+        }
+        else if (day == 3)
+        {
+            PaivaNum = 03;
+        }
+        else if (day == 4)
+        {
+            PaivaNum = 04;
+        }
+        else if (day == 5)
+        {
+            PaivaNum = 05;
+        }
+        else if (day == 6)
+        {
+            PaivaNum = 06;
+        }
+        else if (day == 7)
+        {
+            PaivaNum = 07;
+        }
+        else if (day == 8)
+        {
+            PaivaNum = 08;
+        }
+        else if (day == 9)
+        {
+            PaivaNum = 09;
+        }
+        else if (day == 10)
+        {
+            PaivaNum = 10;
+        }
+        else if (day == 11)
+        {
+            PaivaNum = 11;
+        }
+        else if (day == 12)
+        {
+            PaivaNum = 12;
+        }
+        else if (day == 13)
+        {
+            PaivaNum = 13;
+        }
+        else if (day == 14)
+        {
+            PaivaNum = 14;
+        }
+        else if (day == 15)
+        {
+            PaivaNum = 15;
+        }
+        else if (day == 16)
+        {
+            PaivaNum = 16;
+        }
+        else if (day == 17)
+        {
+            PaivaNum = 17;
+        }
+        else if (day == 18)
+        {
+            PaivaNum = 18;
+        }
+        else if (day == 19)
+        {
+            PaivaNum = 19;
+        }
+        else if (day == 20)
+        {
+            PaivaNum = 20;
+        }
+        else if (day == 21)
+        {
+            PaivaNum = 21;
+        }
+        else if (day == 22)
+        {
+            PaivaNum = 22;
+        }
+        else if (day == 23)
+        {
+            PaivaNum = 23;
+        }
+        else if (day == 24)
+        {
+            PaivaNum = 24;
+        }
+        else if (day == 25)
+        {
+            PaivaNum = 25;
+        }
+        else if (day == 26)
+        {
+            PaivaNum = 26;
+        }
+        else if (day == 27)
+        {
+            PaivaNum = 27;
+        }
+        else if (day == 28)
+        {
+            PaivaNum = 28;
+        }
+        else if (day == 29)
+        {
+            PaivaNum = 29;
+        }
+        else if (day == 30)
+        {
+            PaivaNum = 30;
+        }
+        else if (day == 31)
+        {
+            PaivaNum = 31;
+        }
     }
 
 
@@ -393,57 +1135,10 @@ public class TimeControl : MonoBehaviour
     {
         DateTime date = new DateTime(year, month, day: 22);
 
-
         currentDate = date;
         int startDay = GetMonthStartDay(year, month);
         int endDay = GetTotalNumberOfDays(year, month);
 
-        /*if(Days.Count == 0)
-        {
-            for (int i = 0; i < 4; i++)
-            {
-                for (int a = 0; a < 7; a++)
-                {
-                    Day newDay;
-
-                    int currDay = (i * 7) + a;
-
-                    if (currDay < startDay || currDay - startDay >= endDay)
-                    {
-                        newDay = new Day(currDay - startDay, Color.grey, weeks[i].GetChild(a).gameObject);
-                        Destroy(newDay.Obj);
-                    }
-                    else
-                    {
-                        newDay = new Day(currDay - startDay, Color.white, weeks[i].GetChild(a).gameObject);
-                        Days.Add(newDay);
-                    }
-
-                    Days.Add(newDay);
-                }
-            }
-        }
-        
-        else
-        {
-            for (int b = 0; b < 42; b++)
-            {
-                if (b < startDay || b - startDay >= endDay)
-                {
-                    Days[b].UpdateColor(Color.grey);
-                }
-                else
-                {
-                    Days[b].UpdateColor(Color.white);
-                }
-                Days[b].UpdateDay(b - startDay);
-            }
-        }
-
-        if (DateTime.Now.Year == year && DateTime.Now.Month == month)
-        {
-            Days[(DateTime.Now.Day - 1) + startDay].UpdateColor(Color.green);
-        }*/
     }
 
     int GetMonthStartDay(int year, int month)
