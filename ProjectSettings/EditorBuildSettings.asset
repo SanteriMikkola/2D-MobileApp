@@ -8,7 +8,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Paascene.unity
     guid: 6e64fda3da16bd8429c9d3c3ba69c048
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/niklas testing.unity
     guid: 26b6cb12449626e4990cca733799c40f
+  - enabled: 1
+    path: "Assets/Scenes/UUSI YHDISTETTY P\xC4\xC4SCENE.unity"
+    guid: e5e8579ab79343647a026f5ca08522a4
   m_configObjects: {}
