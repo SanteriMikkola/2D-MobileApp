@@ -5067,8 +5067,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2144145409}
   m_HandleRect: {fileID: 2144145408}
   m_Direction: 2
-  m_Value: 0.8458371
-  m_Size: 0.2709719
+  m_Value: 0.8542494
+  m_Size: 0.25285426
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -12061,9 +12061,9 @@ MonoBehaviour:
   Minuutit: {fileID: 710378107}
   weeks: []
   DAYS: {fileID: 1013527615}
-  Day29: {fileID: 0}
-  Day30: {fileID: 0}
-  Day31: {fileID: 0}
+  Day29: {fileID: 2072791593}
+  Day30: {fileID: 181781414}
+  Day31: {fileID: 1728129653}
   yearText: {fileID: 1808797764}
   monthText: {fileID: 1983565046}
   dayText: {fileID: 190605961}

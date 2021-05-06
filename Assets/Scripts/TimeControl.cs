@@ -179,12 +179,43 @@ public class TimeControl : MonoBehaviour
         }
 
     }
+    public static int ConvertedMin;
+    public static int CalculatedMin;
+
+    public static int ConvertedHour;
+    public static int CalculatedHour;
+
+    public static int ConvertedDay;
+    public static int CalculatedDay;
+
+    public static int ConvertedMonth;
+    public static int CalculatedMonth;
+
+    public static int ConvertedYear;
+    public static int CalculatedYear;
 
     private void Update()
     {
         CalculateTime();
         //Debug.Log("Vuodet: " + year + " Kuukaudet: " + month + " Päivät: " + day + " Tunnit: " + hour + " Minuutit: " + minute);
         TextCallFunction();
+
+        ConvertedMin = (int)minute;
+        CalculatedMin = MinNum - ConvertedMin;
+
+        ConvertedHour = (int)hour;
+        CalculatedHour = hourNum - ConvertedHour;
+
+        ConvertedDay = (int)day;
+        CalculatedDay = PaivaNum - ConvertedDay;
+
+        ConvertedMonth = (int)month;
+        CalculatedMonth = kuukausi - ConvertedMonth;
+
+        ConvertedYear = (int)year;
+        CalculatedYear = YearValue - ConvertedYear;
+
+        //Debug.Log("Vuodet: " + CalculatedYear + " Kuukaudet: " + CalculatedMonth + " Päivät: " + CalculatedDay + " Tunnit: " + CalculatedHour + " Minuutit: " + CalculatedMin);
     }
 
     public void Hour01()
@@ -1241,7 +1272,7 @@ public class TimeControl : MonoBehaviour
     }
 
 
-    private static double YearValue;
+    private static int YearValue;
     private static double casevalue;
 
     public void YearChooser(int value)
