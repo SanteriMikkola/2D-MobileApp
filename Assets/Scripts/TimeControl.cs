@@ -113,14 +113,33 @@ public class TimeControl : MonoBehaviour
         day = DateTime.Now.Day;
         month = DateTime.Now.Month;
         year = DateTime.Now.Year;
+
+        TextCallFunction();
     }
 
     void TextCallFunction()
     {
-        yearText.text = "Year: " + YearValue;
-        monthText.text = "Month: " + kuukaudenNimi;
-        dayText.text = "Day: " + PaivaNum;
-        clockText.text = string.Format("Time: " + "{0:00}:{1:00}", hourNum, MinNum);
+        yearText.text = "Year: " + CalculatedYear;
+        monthText.text = "Month: " + CalculatedMonth;
+        dayText.text = "Day: " + CalculatedDay;
+        clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
+
+        if (CalculatedYear <= 0)
+        {
+            yearText.text = "Year: ----";
+        }
+        else if (CalculatedMonth <= 0)
+        {
+            monthText.text = "Month: --";
+        }
+        else if (CalculatedDay <= 0)
+        {
+            dayText.text = "Day: --";
+        }
+        else if (CalculatedHour <= 0 && CalculatedMin <= 0)
+        {
+            clockText.text = string.Format("Time: " + "{0:00}:{1:00}");
+        }
     }
 
     void CalculateMonth()
@@ -194,11 +213,21 @@ public class TimeControl : MonoBehaviour
     public static int ConvertedYear;
     public static int CalculatedYear;
 
+    public static int NegativeYear = 0;
+    public static int NegativeMonth = 0;
+    public static int NegativeDay = 0;
+    public static int NegativeHour = 0;
+    public static int NegativeMin = 0;
+
+    //public static int startingNumber = -1;
+    //public static int endingNumbeer = -2030;
+
+    //public static var numbers = Enumerable.Range(-0, -2030).Cast<float>().ToList();
+
     private void Update()
     {
         CalculateTime();
         //Debug.Log("Vuodet: " + year + " Kuukaudet: " + month + " Päivät: " + day + " Tunnit: " + hour + " Minuutit: " + minute);
-        TextCallFunction();
 
         ConvertedMin = (int)minute;
         CalculatedMin = MinNum - ConvertedMin;
@@ -214,6 +243,35 @@ public class TimeControl : MonoBehaviour
 
         ConvertedYear = (int)year;
         CalculatedYear = YearValue - ConvertedYear;
+
+        /*for (int i = startingNumber; i <= endingNumbeer; i++)
+        {
+            i = NegativeYear;
+            Debug.Log(NegativeYear);
+        }*/
+
+        if (CalculatedYear < NegativeYear)
+        {
+            CalculatedYear = 0;
+        }
+        else if (CalculatedMonth < NegativeMonth)
+        {
+            CalculatedMonth = 0;
+        }
+        else if (CalculatedDay < NegativeDay)
+        {
+            CalculatedDay = 0;
+        }
+        else if (CalculatedHour < NegativeHour)
+        {
+            CalculatedHour = 0;
+        }
+        else if (CalculatedMin < NegativeMin)
+        {
+            CalculatedMin = 0;
+        }
+
+        TextCallFunction();
 
         //Debug.Log("Vuodet: " + CalculatedYear + " Kuukaudet: " + CalculatedMonth + " Päivät: " + CalculatedDay + " Tunnit: " + CalculatedHour + " Minuutit: " + CalculatedMin);
     }
