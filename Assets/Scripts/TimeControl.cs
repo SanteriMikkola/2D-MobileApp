@@ -124,21 +124,31 @@ public class TimeControl : MonoBehaviour
         dayText.text = "Day: " + CalculatedDay;
         clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
 
-        if (CalculatedYear <= 0)
+        if (CalculatedYear < 0)
         {
             yearText.text = "Year: ----";
         }
-        else if (CalculatedMonth <= 0)
+        if (CalculatedMonth < 0)
         {
             monthText.text = "Month: --";
         }
-        else if (CalculatedDay <= 0)
+        if (CalculatedDay < 0)
         {
             dayText.text = "Day: --";
         }
-        else if (CalculatedHour <= 0 && CalculatedMin <= 0)
+        if (CalculatedHour < 0 && CalculatedMin > 0)
         {
-            clockText.text = string.Format("Time: " + "{0:00}:{1:00}");
+            CalculatedHour = 00;
+            clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
+        }
+        if (CalculatedHour > 0 && CalculatedMin < 0)
+        {
+            CalculatedMin = 00;
+            clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
+        }
+        if (CalculatedHour < 0 && CalculatedMin < 0)
+        {
+            clockText.text = "Time: " + "--:--";
         }
     }
 
@@ -219,6 +229,8 @@ public class TimeControl : MonoBehaviour
     public static int NegativeHour = 0;
     public static int NegativeMin = 0;
 
+    public static int kolme = -3;
+
     //public static int startingNumber = -1;
     //public static int endingNumbeer = -2030;
 
@@ -256,11 +268,18 @@ public class TimeControl : MonoBehaviour
         }
         else if (CalculatedMonth < NegativeMonth)
         {
-            CalculatedMonth = 0;
+            CalculatedMonth = System.Math.Abs(CalculatedMonth);
+            //CalculatedMonth = ConvertedMonth - CalculatedMonth;
+            /*if (CalculatedMonth == 0)
+            {
+                CalculatedMonth = ConvertedMonth;
+                Debug.Log(CalculatedMonth);
+            }*/
+            Debug.Log(CalculatedMonth);
         }
         else if (CalculatedDay < NegativeDay)
         {
-            CalculatedDay = 0;
+            CalculatedDay = CalculatedDay * kolme;
         }
         else if (CalculatedHour < NegativeHour)
         {
