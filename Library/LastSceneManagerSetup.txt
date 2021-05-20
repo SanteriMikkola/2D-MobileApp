@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/Scenes/UUSI YHDISTETTY P\xC4\xC4SCENE.unity"
+- path: Assets/Scenes/niklas testing 2.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

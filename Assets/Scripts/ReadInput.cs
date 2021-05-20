@@ -6,14 +6,14 @@ using UnityEngine.UI;
 public class ReadInput : MonoBehaviour
 {
     GameObject MuistutusText;
-    public GameObject MyText;
+    public GameObject MuistutusTeksti;
     private string input;
     Text ourComponent;
     // Start is called before the first frame update
     void Start()
     {
         
-        MuistutusText = (MyText);
+        MuistutusText = (MuistutusTeksti);
         ourComponent = MuistutusText.GetComponent<Text>();
     }
 
