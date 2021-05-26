@@ -623,8 +623,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1475181679}
   m_HandleRect: {fileID: 1475181678}
   m_Direction: 2
-  m_Value: 0.71592313
-  m_Size: 0.10469522
+  m_Value: 0.7060171
+  m_Size: 0.10915248
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8069,16 +8069,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
+  Minuutit: {fileID: 0}
   weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 294573708}
-  monthText: {fileID: 1043440176}
-  dayText: {fileID: 1705546341}
-  clockText: {fileID: 595484112}
+  DAYS: {fileID: 0}
+  Day29: {fileID: 0}
+  Day30: {fileID: 0}
+  Day31: {fileID: 0}
+  yearText: {fileID: 0}
+  monthText: {fileID: 0}
+  dayText: {fileID: 0}
+  clockText: {fileID: 0}
 --- !u!114 &479176034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10896,16 +10896,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
+  Minuutit: {fileID: 0}
   weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
+  DAYS: {fileID: 0}
+  Day29: {fileID: 0}
+  Day30: {fileID: 0}
+  Day31: {fileID: 0}
+  yearText: {fileID: 0}
+  monthText: {fileID: 0}
+  dayText: {fileID: 0}
+  clockText: {fileID: 0}
 --- !u!114 &673533186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14515,16 +14515,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
+  Minuutit: {fileID: 0}
   weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 294573708}
-  monthText: {fileID: 1043440176}
-  dayText: {fileID: 1705546341}
-  clockText: {fileID: 595484112}
+  DAYS: {fileID: 0}
+  Day29: {fileID: 0}
+  Day30: {fileID: 0}
+  Day31: {fileID: 0}
+  yearText: {fileID: 0}
+  monthText: {fileID: 0}
+  dayText: {fileID: 0}
+  clockText: {fileID: 0}
 --- !u!114 &843824229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14918,16 +14918,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
+  Minuutit: {fileID: 0}
   weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
+  DAYS: {fileID: 0}
+  Day29: {fileID: 0}
+  Day30: {fileID: 0}
+  Day31: {fileID: 0}
+  yearText: {fileID: 0}
+  monthText: {fileID: 0}
+  dayText: {fileID: 0}
+  clockText: {fileID: 0}
 --- !u!1 &854541075
 GameObject:
   m_ObjectHideFlags: 0
@@ -16001,8 +16001,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1785131361}
   m_HandleRect: {fileID: 1785131360}
   m_Direction: 2
-  m_Value: 0.52683234
-  m_Size: 0.042403292
+  m_Value: 0.5263526
+  m_Size: 0.045581605
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -16320,16 +16320,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
+  Minuutit: {fileID: 0}
   weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
+  DAYS: {fileID: 0}
+  Day29: {fileID: 0}
+  Day30: {fileID: 0}
+  Day31: {fileID: 0}
+  yearText: {fileID: 0}
+  monthText: {fileID: 0}
+  dayText: {fileID: 0}
+  clockText: {fileID: 0}
 --- !u!114 &904727309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18795,7 +18795,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3563, y: 644}
+  m_AnchoredPosition: {x: 4.3563, y: 571}
   m_SizeDelta: {x: 170.58, y: 29.517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1029181914
@@ -20391,16 +20391,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
+  Minuutit: {fileID: 0}
   weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
+  DAYS: {fileID: 0}
+  Day29: {fileID: 0}
+  Day30: {fileID: 0}
+  Day31: {fileID: 0}
+  yearText: {fileID: 0}
+  monthText: {fileID: 0}
+  dayText: {fileID: 0}
+  clockText: {fileID: 0}
 --- !u!114 &1080542185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23515,7 +23515,7 @@ SpriteRenderer:
   m_Size: {x: 96.27869, y: 191.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1226208114
@@ -24837,8 +24837,8 @@ RectTransform:
   m_Father: {fileID: 236307378}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.4367091}
-  m_AnchorMax: {x: 1, y: 0.58967686}
+  m_AnchorMin: {x: 0, y: 0.4068996}
+  m_AnchorMax: {x: 1, y: 0.6165738}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -24932,16 +24932,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
+  Minuutit: {fileID: 0}
   weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 294573708}
-  monthText: {fileID: 1043440176}
-  dayText: {fileID: 1705546341}
-  clockText: {fileID: 595484112}
+  DAYS: {fileID: 0}
+  Day29: {fileID: 0}
+  Day30: {fileID: 0}
+  Day31: {fileID: 0}
+  yearText: {fileID: 0}
+  monthText: {fileID: 0}
+  dayText: {fileID: 0}
+  clockText: {fileID: 0}
 --- !u!1 &1299319167
 GameObject:
   m_ObjectHideFlags: 0
@@ -25192,7 +25192,7 @@ SpriteRenderer:
   m_Size: {x: 1.77, y: 1.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1309666094
@@ -26679,7 +26679,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3563, y: 198}
+  m_AnchoredPosition: {x: 4.3563, y: 125}
   m_SizeDelta: {x: 170.58, y: 29.517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1391124580
@@ -28465,8 +28465,8 @@ RectTransform:
   m_Father: {fileID: 1431147331}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.6409694}
-  m_AnchorMax: {x: 1, y: 0.7456646}
+  m_AnchorMin: {x: 0, y: 0.6289536}
+  m_AnchorMax: {x: 1, y: 0.7381061}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -29090,7 +29090,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3563, y: 496}
+  m_AnchoredPosition: {x: 4.3563, y: 423}
   m_SizeDelta: {x: 170.58, y: 29.517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1501272172
@@ -31798,7 +31798,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3563, y: 347}
+  m_AnchoredPosition: {x: 4.3563, y: 274}
   m_SizeDelta: {x: 170.58, y: 29.517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1603032019
@@ -32012,7 +32012,7 @@ SpriteRenderer:
   m_Size: {x: 11.0625, y: 11.0625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1612349563
@@ -33209,7 +33209,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -120.00006, y: -59.953186}
+  m_AnchoredPosition: {x: -120.00006, y: -59.953247}
   m_SizeDelta: {x: -245.508, y: 119.91}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1654597546
@@ -34840,7 +34840,7 @@ SpriteRenderer:
   m_Size: {x: 1.77, y: 1.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1762478927
@@ -35382,8 +35382,8 @@ RectTransform:
   m_Father: {fileID: 1133550095}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.50449294}
-  m_AnchorMax: {x: 1, y: 0.5468962}
+  m_AnchorMin: {x: 0, y: 0.5023606}
+  m_AnchorMax: {x: 1, y: 0.54794216}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -35716,7 +35716,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1798365489
 MonoBehaviour:
@@ -39576,7 +39576,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
 --- !u!114 &1947299998
 MonoBehaviour:
@@ -41541,8 +41541,8 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1295077494}
   m_HandleRect: {fileID: 1295077493}
   m_Direction: 2
-  m_Value: 0.5155755
-  m_Size: 0.15296774
+  m_Value: 0.51485044
+  m_Size: 0.2096742
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -42172,16 +42172,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
+  Minuutit: {fileID: 0}
   weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
+  DAYS: {fileID: 0}
+  Day29: {fileID: 0}
+  Day30: {fileID: 0}
+  Day31: {fileID: 0}
+  yearText: {fileID: 0}
+  monthText: {fileID: 0}
+  dayText: {fileID: 0}
+  clockText: {fileID: 0}
 --- !u!114 &2085419800
 MonoBehaviour:
   m_ObjectHideFlags: 0
