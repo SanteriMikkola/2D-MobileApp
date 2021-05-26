@@ -26835,9 +26835,9 @@ MonoBehaviour:
   Minuutit: {fileID: 710378107}
   weeks: []
   DAYS: {fileID: 1013527615}
-  Day29: {fileID: 0}
-  Day30: {fileID: 0}
-  Day31: {fileID: 0}
+  Day29: {fileID: 2072791593}
+  Day30: {fileID: 181781414}
+  Day31: {fileID: 1728129653}
   yearText: {fileID: 1808797764}
   monthText: {fileID: 1983565046}
   dayText: {fileID: 190605961}
@@ -38842,7 +38842,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7bea6392fa2e14b4bb673a9ec51573b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MyText: {fileID: 2030256871}
+  MuistutusTeksti: {fileID: 2030256871}
 --- !u!1 &2115813917
 GameObject:
   m_ObjectHideFlags: 0

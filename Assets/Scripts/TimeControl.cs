@@ -97,6 +97,8 @@ public class TimeControl : MonoBehaviour
     public Text dayText;
     public Text clockText;
 
+    public static bool IsThatNextYear;
+
     private const int TIMESCALE = 1;
 
     public static double second, minute, hour, day, month, year;
@@ -124,21 +126,31 @@ public class TimeControl : MonoBehaviour
         dayText.text = "Day: " + CalculatedDay;
         clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
 
-        if (CalculatedYear <= 0)
+        if (CalculatedYear < 0)
         {
             yearText.text = "Year: ----";
         }
-        else if (CalculatedMonth <= 0)
+        if (CalculatedMonth < 0)
         {
             monthText.text = "Month: --";
         }
-        else if (CalculatedDay <= 0)
+        if (CalculatedDay < 0)
         {
             dayText.text = "Day: --";
         }
-        else if (CalculatedHour <= 0 && CalculatedMin <= 0)
+        if (CalculatedHour < 0 && CalculatedMin > 0)
         {
-            clockText.text = string.Format("Time: " + "{0:00}:{1:00}");
+            CalculatedHour = 00;
+            clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
+        }
+        if (CalculatedHour > 0 && CalculatedMin < 0)
+        {
+            CalculatedMin = 00;
+            clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
+        }
+        if (CalculatedHour < 0 && CalculatedMin < 0)
+        {
+            clockText.text = "Time: " + "--:--";
         }
     }
 
@@ -219,6 +231,8 @@ public class TimeControl : MonoBehaviour
     public static int NegativeHour = 0;
     public static int NegativeMin = 0;
 
+    public static int kolme = -3;
+
     //public static int startingNumber = -1;
     //public static int endingNumbeer = -2030;
 
@@ -257,10 +271,17 @@ public class TimeControl : MonoBehaviour
         else if (CalculatedMonth < NegativeMonth)
         {
             CalculatedMonth = 0;
+
+            //CalculatedMonth = ConvertedMonth - CalculatedMonth;
+            /*if (CalculatedMonth == 0)
+            {
+                CalculatedMonth = ConvertedMonth;
+                Debug.Log(CalculatedMonth);
+            }*/
         }
         else if (CalculatedDay < NegativeDay)
         {
-            CalculatedDay = 0;
+            CalculatedDay = CalculatedDay;
         }
         else if (CalculatedHour < NegativeHour)
         {
@@ -269,6 +290,20 @@ public class TimeControl : MonoBehaviour
         else if (CalculatedMin < NegativeMin)
         {
             CalculatedMin = 0;
+        }
+
+        /*if (IsThatNextYear == true)
+        {
+
+        }*/
+
+        if (CalculatedYear > 0)
+        {
+            CalculatedMonth = kuukausi - ConvertedMonth;
+
+            CalculatedMonth = System.Math.Abs(CalculatedMonth);
+
+            Debug.Log(CalculatedMonth);
         }
 
         TextCallFunction();
@@ -1340,51 +1375,88 @@ public class TimeControl : MonoBehaviour
         {
             casevalue = 1;
             YearValue = 2021;
+            IsThatNextYear = false;
         }
         else if (value == 2)
         {
             casevalue = 1;
             YearValue = 2022;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 3)
         {
             casevalue = 1;
             YearValue = 2023;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 4)
         {
             casevalue = 1;
             YearValue = 2024;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 5)
         {
             casevalue = 1;
             YearValue = 2025;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 6)
         {
             casevalue = 1;
             YearValue = 2026;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 7)
         {
             casevalue = 1;
             YearValue = 2027;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 8)
         {
             casevalue = 1;
             YearValue = 2028;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 9)
         {
             casevalue = 1;
             YearValue = 2029;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 10)
         {
             casevalue = 1;
             YearValue = 2030;
+            if (ConvertedYear == YearValue)
+            {
+                IsThatNextYear = true;
+            }
         }
         else if (value == 11)
         {
