@@ -8148,16 +8148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
-  weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
 --- !u!114 &479176034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10975,16 +10965,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 0}
-  weeks: []
-  DAYS: {fileID: 0}
-  Day29: {fileID: 0}
-  Day30: {fileID: 0}
-  Day31: {fileID: 0}
-  yearText: {fileID: 0}
-  monthText: {fileID: 0}
-  dayText: {fileID: 0}
-  clockText: {fileID: 0}
 --- !u!114 &673533186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14594,16 +14574,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
-  weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
 --- !u!114 &843824229
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14997,16 +14967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
-  weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
 --- !u!1 &854541075
 GameObject:
   m_ObjectHideFlags: 0
@@ -16399,16 +16359,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
-  weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
 --- !u!114 &904727309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20470,16 +20420,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
-  weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
 --- !u!114 &1080542185
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23650,7 +23590,7 @@ SpriteRenderer:
   m_Size: {x: 96.27869, y: 191.25}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1226208114
@@ -25067,16 +25007,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
-  weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 294573708}
-  monthText: {fileID: 1043440176}
-  dayText: {fileID: 1705546341}
-  clockText: {fileID: 595484112}
 --- !u!1 &1299319167
 GameObject:
   m_ObjectHideFlags: 0
@@ -25327,7 +25257,7 @@ SpriteRenderer:
   m_Size: {x: 1.77, y: 1.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1309666094
@@ -26814,7 +26744,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3563, y: 125}
+  m_AnchoredPosition: {x: 4.3563, y: 275}
   m_SizeDelta: {x: 170.58, y: 29.517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1391124580
@@ -31915,7 +31845,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1603032018
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31933,7 +31863,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 4.3563, y: 274}
+  m_AnchoredPosition: {x: 4.3563, y: 63}
   m_SizeDelta: {x: 170.58, y: 29.517}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1603032019
@@ -32147,7 +32077,7 @@ SpriteRenderer:
   m_Size: {x: 11.0625, y: 11.0625}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1612349563
@@ -34975,7 +34905,7 @@ SpriteRenderer:
   m_Size: {x: 1.77, y: 1.77}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1762478927
@@ -42307,16 +42237,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e2588e4d6b1ba14b9235a253626fc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Minuutit: {fileID: 1037547773}
-  weeks: []
-  DAYS: {fileID: 1177049828}
-  Day29: {fileID: 1726254497}
-  Day30: {fileID: 1145602514}
-  Day31: {fileID: 412874784}
-  yearText: {fileID: 2062229888}
-  monthText: {fileID: 145604704}
-  dayText: {fileID: 586092693}
-  clockText: {fileID: 1882384913}
 --- !u!114 &2085419800
 MonoBehaviour:
   m_ObjectHideFlags: 0
