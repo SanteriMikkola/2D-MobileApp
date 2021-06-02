@@ -124,7 +124,7 @@ public class TimeControl : MonoBehaviour
         dayText.text = "Day: " + CalculatedDay;
         clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
 
-        if (CalculatedYear < 0)
+        /*if (CalculatedYear < 0)
         {
             yearText.text = "Year: ----";
         }
@@ -149,7 +149,7 @@ public class TimeControl : MonoBehaviour
         if (CalculatedHour < 0 && CalculatedMin < 0)
         {
             clockText.text = "Time: " + "--:--";
-        }
+        }*/
     }
 
     void CalculateMonth()
@@ -201,7 +201,7 @@ public class TimeControl : MonoBehaviour
         {
             CalculateMonth();
         }
-        else if (month >12)
+        else if (month > 12)
         {
             month = 1;
             year++;
@@ -223,13 +223,11 @@ public class TimeControl : MonoBehaviour
     public static int ConvertedYear;
     public static int CalculatedYear;
 
-    public static int NegativeYear = 0;
-    public static int NegativeMonth = 0;
-    public static int NegativeDay = 0;
-    public static int NegativeHour = 0;
-    public static int NegativeMin = 0;
-
-    public static int kolme = -3;
+    public static int NegativeYear;
+    public static int NegativeMonth;
+    public static int NegativeDay;
+    public static int NegativeHour;
+    public static int NegativeMin;
 
     //public static int startingNumber = -1;
     //public static int endingNumbeer = -2030;
@@ -262,35 +260,67 @@ public class TimeControl : MonoBehaviour
             Debug.Log(NegativeYear);
         }*/
 
-        if (CalculatedYear < NegativeYear)
+        if (CalculatedYear < 0)
         {
-            CalculatedYear = 0;
+            CalculatedYear = YearValue - ConvertedYear;
+            CalculatedYear = System.Math.Abs(CalculatedYear);
+            CalculatedYear = YearValue;
         }
-        else if (CalculatedMonth < NegativeMonth)
+        if (CalculatedYear >= 0)
         {
-            CalculatedMonth = 0;
-
-            //CalculatedMonth = ConvertedMonth - CalculatedMonth;
-            /*if (CalculatedMonth == 0)
-            {
-                CalculatedMonth = ConvertedMonth;
-                Debug.Log(CalculatedMonth);
-            }*/
-        }
-        else if (CalculatedDay < NegativeDay)
-        {
-            CalculatedDay = CalculatedDay;
-        }
-        else if (CalculatedHour < NegativeHour)
-        {
-            CalculatedHour = 0;
-        }
-        else if (CalculatedMin < NegativeMin)
-        {
-            CalculatedMin = 0;
+            CalculatedYear = YearValue - ConvertedYear;
+            CalculatedYear = YearValue;
         }
 
-        if (YearValue == ConvertedYear && kuukausi < ConvertedMonth)
+        if (CalculatedMonth < 0)
+        {
+            CalculatedMonth = kuukausi - ConvertedMonth;
+            CalculatedMonth = System.Math.Abs(CalculatedMonth);
+            CalculatedMonth = kuukausi;
+        }
+        if (CalculatedMonth >= 0)
+        {
+            CalculatedMonth = kuukausi - ConvertedMonth;
+            CalculatedMonth = kuukausi;
+        }
+
+        if (CalculatedDay < 0)
+        {
+            CalculatedDay = PaivaNum - ConvertedDay;
+            CalculatedDay = System.Math.Abs(CalculatedDay);
+            CalculatedDay = PaivaNum;
+        }
+        if (CalculatedDay >= 0)
+        {
+            CalculatedDay = PaivaNum - ConvertedDay;
+            CalculatedDay = PaivaNum;
+        }
+
+        if (CalculatedHour < 0)
+        {
+            CalculatedHour = hourNum - ConvertedHour;
+            CalculatedHour = System.Math.Abs(CalculatedHour);
+            CalculatedHour = hourNum;
+        }
+        if (CalculatedHour >= 0)
+        {
+            CalculatedHour = hourNum - ConvertedHour;
+            CalculatedHour = hourNum;
+        }
+
+        if (CalculatedMin < 0)
+        {
+            CalculatedMin = MinNum - ConvertedMin;
+            CalculatedMin = System.Math.Abs(CalculatedMin);
+            CalculatedMin = MinNum;
+        }
+        if (CalculatedMin >= 0)
+        {
+            CalculatedMin = MinNum - ConvertedMin;
+            CalculatedMin = MinNum;
+        }
+
+        /*if (YearValue == ConvertedYear && kuukausi < ConvertedMonth)
         {
             CalculatedMonth = 0;
         }
@@ -324,7 +354,7 @@ public class TimeControl : MonoBehaviour
         else if (hourNum == ConvertedHour && minuteNum > ConvertedMin)
         {
             CalculatedMin = minuteNum - ConvertedMin;
-        }
+        }*/
         /*if (CalculatedYear > 0)
         {
             CalculatedMonth = kuukausi - ConvertedMonth;
@@ -1509,7 +1539,7 @@ public class TimeControl : MonoBehaviour
 
     public void YearControll()
     {
-        
+
 
         int CaseValue = 1;
         Debug.Log("Mikä vuosi: " + YearValue);
@@ -1519,13 +1549,13 @@ public class TimeControl : MonoBehaviour
             if (YearValue == 2024 || YearValue == 2028 || YearValue == 2032 || YearValue == 2036 || YearValue == 2040)
             {
                 Day29.SetActive(true);
-                
+
             }
             else if (YearValue == 2021 || YearValue == 2022 || YearValue == 2023 || YearValue == 2025 || YearValue == 2026 || YearValue == 2027 || YearValue == 2029 || YearValue == 2030 || YearValue == 2031 || YearValue == 2033 || YearValue == 2034 || YearValue == 2035 || YearValue == 2037 || YearValue == 2038 || YearValue == 2039 || YearValue == 2041)
             {
                 Day29.SetActive(false);
             }
-            
+
         }
     }
 
