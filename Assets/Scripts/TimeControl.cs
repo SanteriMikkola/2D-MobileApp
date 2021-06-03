@@ -124,7 +124,7 @@ public class TimeControl : MonoBehaviour
         dayText.text = "Day: " + CalculatedDay;
         clockText.text = string.Format("Time: " + "{0:00}:{1:00}", CalculatedHour, CalculatedMin);
 
-        /*if (CalculatedYear < 0)
+        if (CalculatedYear < 0)
         {
             yearText.text = "Year: ----";
         }
@@ -149,7 +149,7 @@ public class TimeControl : MonoBehaviour
         if (CalculatedHour < 0 && CalculatedMin < 0)
         {
             clockText.text = "Time: " + "--:--";
-        }*/
+        }
     }
 
     void CalculateMonth()
@@ -266,7 +266,7 @@ public class TimeControl : MonoBehaviour
             CalculatedYear = System.Math.Abs(CalculatedYear);
             CalculatedYear = YearValue;
         }
-        if (CalculatedYear >= 0)
+        if (YearValue >= ConvertedYear)
         {
             CalculatedYear = YearValue - ConvertedYear;
             CalculatedYear = YearValue;
@@ -278,7 +278,7 @@ public class TimeControl : MonoBehaviour
             CalculatedMonth = System.Math.Abs(CalculatedMonth);
             CalculatedMonth = kuukausi;
         }
-        if (CalculatedMonth >= 0)
+        if (kuukausi >= ConvertedMonth)
         {
             CalculatedMonth = kuukausi - ConvertedMonth;
             CalculatedMonth = kuukausi;
@@ -290,7 +290,7 @@ public class TimeControl : MonoBehaviour
             CalculatedDay = System.Math.Abs(CalculatedDay);
             CalculatedDay = PaivaNum;
         }
-        if (CalculatedDay >= 0)
+        if (PaivaNum >= ConvertedDay)
         {
             CalculatedDay = PaivaNum - ConvertedDay;
             CalculatedDay = PaivaNum;
@@ -302,7 +302,7 @@ public class TimeControl : MonoBehaviour
             CalculatedHour = System.Math.Abs(CalculatedHour);
             CalculatedHour = hourNum;
         }
-        if (CalculatedHour >= 0)
+        if (hourNum >= ConvertedHour)
         {
             CalculatedHour = hourNum - ConvertedHour;
             CalculatedHour = hourNum;
@@ -314,13 +314,13 @@ public class TimeControl : MonoBehaviour
             CalculatedMin = System.Math.Abs(CalculatedMin);
             CalculatedMin = MinNum;
         }
-        if (CalculatedMin >= 0)
+        if (MinNum >= ConvertedMin)
         {
             CalculatedMin = MinNum - ConvertedMin;
             CalculatedMin = MinNum;
         }
 
-        /*if (YearValue == ConvertedYear && kuukausi < ConvertedMonth)
+        /*if (YearValue < ConvertedYear && kuukausi < ConvertedMonth)
         {
             CalculatedMonth = 0;
         }
@@ -329,7 +329,7 @@ public class TimeControl : MonoBehaviour
             CalculatedMonth = kuukausi - ConvertedMonth;
         }
 
-        if (kuukausi == ConvertedMonth && PaivaNum < ConvertedDay)
+        if (kuukausi < ConvertedMonth && PaivaNum < ConvertedDay)
         {
             CalculatedDay = 0;
         }
@@ -338,7 +338,7 @@ public class TimeControl : MonoBehaviour
             CalculatedDay = PaivaNum - ConvertedDay;
         }
 
-        if (PaivaNum == ConvertedDay && hourNum < ConvertedHour)
+        if (PaivaNum < ConvertedDay && hourNum < ConvertedHour)
         {
             CalculatedHour = 0;
         }
@@ -347,7 +347,7 @@ public class TimeControl : MonoBehaviour
             CalculatedHour = hourNum - ConvertedHour;
         }
 
-        if (hourNum == ConvertedHour && minuteNum < ConvertedMin)
+        if (hourNum < ConvertedHour && minuteNum < ConvertedMin)
         {
             CalculatedMin = 0;
         }
@@ -355,6 +355,19 @@ public class TimeControl : MonoBehaviour
         {
             CalculatedMin = minuteNum - ConvertedMin;
         }*/
+
+        /*if (YearValue < ConvertedYear && kuukausi < ConvertedMonth && PaivaNum < ConvertedDay && hourNum < ConvertedHour)
+        {
+            CalculatedMin = 0;
+        }
+        if (YearValue < ConvertedYear && kuukausi < ConvertedMonth && PaivaNum < ConvertedDay)
+        {
+            CalculatedHour = 0;
+        }
+        if (YearValue < ConvertedYear && kuukausi < ConvertedMonth)
+        {
+            CalculatedDay = 0;
+        }/*
         /*if (CalculatedYear > 0)
         {
             CalculatedMonth = kuukausi - ConvertedMonth;
